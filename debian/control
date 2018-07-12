@@ -1,0 +1,20 @@
+Source: fake-mock
+Priority: optional
+Maintainer: Tomas Janousek <tomi@nomi.cz>
+Build-Depends:
+ debhelper (>= 10),
+ basexy,
+ python3-cram,
+Standards-Version: 4.1.3
+Section: devel
+Homepage: https://github.com/roman-neuhauser/fake
+Vcs-Browser: https://github.com/liskin/fake
+Vcs-Git: https://github.com/liskin/fake.git
+
+Package: fake-mock
+Architecture: all
+Multi-Arch: foreign
+Depends: basexy, ${misc:Depends}
+Conflicts: fake
+Description: Mocks and Stubs For the Command Line
+ Easy creation of simple mocks for commandline utilities.
